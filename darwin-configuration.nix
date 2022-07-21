@@ -6,14 +6,27 @@
   # $ nix-env -qaP | grep wget
   environment.systemPackages = with pkgs;
     [
+			python310
+			git
       wget
-      python310
+      ffmpeg
+			cmake
+			go
       tmux
       tcpdump
       clojure
-      nodejs-12_x
+      nodejs-16_x
+			rustup
       ctop
       gnupg
+      nmap
+      k9s
+      awscli
+      kubectl
+      aws-iam-authenticator
+			zig
+      vim
+			neofetch
     ];
 
   # Use a custom configuration.nix location.
